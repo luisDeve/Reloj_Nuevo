@@ -1,0 +1,83 @@
+body {
+  background: #749cc2;
+  background: linear-gradient(270deg, #749cc2, #91c8e4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+}
+
+.card {
+  background: rgba(246, 244, 235, 0.37);
+  border-radius: 16px;
+  border: 0.0625rem solid rgba(246, 244, 235, 0.36);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  width: 35%;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 0.5s ease;
+}
+.mode-switch {
+  position: absolute;
+  right: 1rem;
+  bottom: 11.5rem;
+}
+#toggle-btn {
+  border: none;
+  border-radius: 5rem;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+#prueba {
+  font-size: 5rem;
+  color: #f6f4eb;
+  text-align: center;
+  transition: color 0.5s ease;
+}
+.fecha {
+  text-align: center;
+  display: block;
+  font-size: 1.5rem;
+  color: #f6f4eb;
+  transition: color 0.5s ease;
+
+}
+/*Dark mode*/
+.dark .card {
+  background: #526D82;
+  transition: background-color 0.5s ease;
+
+}
+.dark #prueba {
+  color: #DDE6ED;
+  transition: color 0.5s ease;
+}
+.dark .fecha {
+    color: #DDE6ED;
+    transition: color 0.5s ease;
+}
+body.dark {
+  background: linear-gradient(135deg, #27384d, #526e82);
+  transition: background-color 0.5s ease;
+}
+
+@media screen and (max-width:480px) {
+  .card{
+    width: 90%;
+    min-height: 32rem;
+  }
+  .mode-switch{
+    right: 0rem;
+    bottom: 29.5rem;
+  }
+  .reloj {
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+}
+}
