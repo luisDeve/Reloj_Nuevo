@@ -78,6 +78,20 @@ body.dark {
   .reloj {
     position: absolute;
     top: 4rem;
-    left: 1rem;
+    left: 0rem;
+}
+.fecha{
+  margin-bottom: 5rem;
+}
+
+table{
+  width: 100%;
+}
+
+td,th{
+  font-size: 1rem;
+  text-align: center;
+  padding: 8px;
+  color: #f6f4eb;
 }
 }
